@@ -1,85 +1,13 @@
 <!DOCTYPE html>
-<html>
-<style>
-
-form {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  width: auto;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-label {display: block;}
-
-input[type=text], select {
-  width: 50%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=email], select {
-  width: 50%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-input[type=telefone], select {
-  width: 50%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;}
-body{
-background-color: #006eff;
-}
-h2{
-    color: rgb(0, 0, 0);
-}
-input[type=submit] {
-  width: 50%;
-  background-color: #3c80d8;
-  color: white;
-  padding: 14px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #0015ff;
-}
-textarea {
-  width: 100%;
-  height: 150px;
-  padding: 12px;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 4px;
-  background-color: #f8f8f8;
-  font-size: 16px;
-  resize: none;}
-
-</style>
-<body>
+<html lang="pt-br">
 <html lang="en">
 
 <head>
+   <title>inscrição senai</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
-<form action="/action_page.php">
-<h2>Inscrição SENAI</h2>
     <style>
         body {
             font-family: 'Roboto', sans-serif;
@@ -88,8 +16,6 @@ textarea {
         }
     </style>
 
-  <label for="fname">Nome Completo</label>
-  <input type="text" id="fname" name="nome completo">
     <title>Document</title>
     <style>
         * {
@@ -97,11 +23,6 @@ textarea {
             font-weight: 900;
         }
 
-  <label for="lname">E-mail</label>
-  <input ty<label for="curso desejado">Cursos</label>pe="email" id="lname" name="Email">
-  
-  <label for="lname">Telefone</label>
-  <input type="telefone" id="lname" name="Email">
         body {
             background-color: #2A09F0;
             display: flex;
@@ -110,15 +31,6 @@ textarea {
             height: 100vh;
         }
 
-  
-  <select id="text" name="text">
-    <option value="Selecione...">Selecione...</option>
-    <option value="ADS">Desenvolvimento de Sistemas</option>
-    <option value="Logística">logística</option>
-    <option value="Informática">Informática</option>
-    <option value="Eletrotécnica">Eletrotécnica</option>
-    <option value="Eletroeletrônica">Eletroeletrônica</option>
-  </select>
         .card {
             position: relative;
             background-color: ghostwhite;
@@ -131,16 +43,11 @@ textarea {
             border-radius: 8.5px;
         }
 
-  <textarea>Observações...</textarea>
-  <input type="text" id="fname" name="Observações">
         a {
             position: absolute;
             top: 30px;
         }
 
-  
-  <input type="submit" value="Enviar Inscrição">
-</form>
         #nav {
             border-radius: 20px;
             padding: 6px;
@@ -150,8 +57,6 @@ textarea {
             cursor: pointer;
         }
 
-</body>
-</html>
         h2 {
             position: relative;
             top: 1.5px;
@@ -219,6 +124,21 @@ textarea {
 </head>
 
 <body>
+    <form action="2index.html">
+  <label for="Nome">Nome completo:</label><br>
+  <input type="text" id="Nome:" name="Nome:" value=""><br>
+  <label for="E-mail">E-mail:</label><br>
+  <input type="email" id="email:" name="E-mail:" value=""><br>
+  <label for="Telefone:">Telefone:</label><br>
+  <input type="tel" id="Telefone:" name="Telefone:" value=""><br><br>
+  <select id="text" name="text">
+    <option value="Selecione...">Selecione...</option>
+    <option value="ADS">Desenvolvimento de Sistemas</option>
+    <option value="Logística">logística</option>
+    <option value="Informática">Informática</option>
+    <option value="Eletrotécnica">Eletrotécnica</option>
+    <option value="Eletroeletrônica">Eletroeletrônica</option>
+  </select>
     <a href="../index.html"><button id="nav">VOLTAR</button></a>
     <div class="card">
         <h2>Inscrição SENAI</h2>
@@ -234,16 +154,6 @@ textarea {
             <label for="tel">Telefone:</label>
             <br>
             <input
-  type="tel"
-  inputmode="tel"
-  name="telefone"
-  id="telefone"
-  placeholder="(11) 9 8765-4321"
-  pattern="^\(?\d{2}\)?\s?9\d{4}\-?\d{4}$"
-  maxlength="15"
-  aria-label="telefone"
-  required
-/>
             <br>
             <label for="course">Curso desejado:</label>
             <br>
@@ -258,7 +168,7 @@ textarea {
             <br>
             <textarea name="coment" class="coment_block"></textarea>
             <br>
-            <input class="input_send" type="submit" value="Enviar Inscrição">
+            <button type="submit">enviar inscrição</button>
         </form>
     </div>
 </body>

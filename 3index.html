@@ -1,183 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enriquecimento de Dados - SENAI</title>
     <link rel="stylesheet" href="style.css">
+
     <style>
+        /* Fonte e base da página */
         body {
-            font-family: 'Roboto', sans-serif;
-            font-weight: 300;
-            /* Light 300 */
-        }
-    </style>
-
-    <title>Document</title>
-    <style>
-        * {
-            font-family: 'Arial', sans-serif;
-            font-weight: 900;
-        }
-
-        a {
-            color: aliceblue;
-            align-items: center;
-        }
-
-        body {
+            font-family: Arial, sans-serif;
             background-color: #2A09F0;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            padding: 20px;
+            min-height: 100vh;
         }
 
-        .card {
-            position: relative;
+        .container {
             background-color: ghostwhite;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 375px;
-            height: 500px;
-            border-radius: 8.5px;
-        }
-
-        a {
-            position: absolute;
-            top: 30px;
-        }
-
-        #nav {
-            border-radius: 20px;
-            padding: 6px;
-            font-size: 16.6px;
-            color: ghostwhite;
-            background-color: #464751;
-            cursor: pointer;
-        }
-
-        h2 {
-            position: relative;
-            top: 1.5px;
-            color: #154672;
-        }
-
-
-        form {
-            position: relative;
-            left: 9px;
-            font-size: 16.6px;
-            /* Light 300 */
-        }
-
-        label {
-            font-weight: bold;
-            color: #464751;
-        }
-
-        form input {
-            margin-top: 8px;
-            margin-bottom: 8px;
-            height: 23px;
-            width: 340px;
-            border: 1px solid rgb(185, 185, 185);
-            border-radius: 5px;
-        }
-
-        select {
-            margin-bottom: 8px;
-            margin-top: 6px;
-            width: 333px;
-            height: 28px;
-            padding: 4.5px;
-            border-radius: 5px;
-            border: 1px solid rgb(185, 185, 185);
-            background-color: rgb(255, 255, 255);
-            color: #464751;
-        }
-
-        .coment_block {
-            margin-top: 5px;
-            width: 340px;
-            height: 45px;
-            border-radius: 5px;
-            margin-bottom: 9px;
-            border: 2px solid black;
-            resize: none;
-            position: relative;
-            left: -.7px;
-        }
-
-        .input_send {
-            width: 329.5px;
-            height: 33px;
-            color: ghostwhite;
-            background-color: #004B8E;
-        }
-
-        .input_send,
-        select {
-            cursor: pointer;
-        }
-    </style>
-</head>
-
-<body>
-    <section class="container">
-        <h2> Enriquecimento de Dados</h2>
-
-        <form action="#" method="POST">
-            <h3>Dados Pessoais</h3>
-            <label for="nome_completo">Nome completo:</label>
-            <input type="text" id="nome_completo" name="nome_completo">
-
-            <label for="data_nasc">Data de Nascimento:</label>
-            <input type="date" id="data_nasc" name="data_nasc">
-
-            <label for="cpf">CPF:</label>
-            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
-
-            <label for="genero">Gênero:</label>
-            <select id="genero" name="genero">
-                <option value="">Selecione</option>
-                <option value="fem">Feminino</option>
-                <option value="masc">Masculino</option>
-            </select>
-
-            <label for="nacionalidade">Nacionalidade:</label>
-            <input type="text" id="nacionalidade" name="nacionalidade" value="Brasileira">
-
-            <h3>Endereço e Contato</h3>
-            <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" name="cidade">
-
-            <label for="tel_celular">Telefone Celular:</label>
-            <input type="tel" id="tel_celular" name="tel_celular">
-
-            <label for="linkedin">LinkedIn (URL):</label>
-            <input type="url" id="linkedin" name="linkedin">
-
-            <h3>Outras Informações</h3>
-            <label>Possui CNH?</label>
-            <div class="radio-group">
-                <input type="radio" id="cnh_sim" name="cnh" value="sim"> <label for="cnh_sim">Sim</label>
-                <input type="radio" id="cnh_nao" name="cnh" value="nao"> <label for="cnh_nao">Não</label>
-            </div>
-
-            <label for="observacao_extra">Observação:</label>
-            <textarea id="observacao_extra" name="observacao_extra"></textarea>
-
-            <div class="grupo-botoes">
-                <button type="submit" class="btn-gravar">Gravar</button>
-                <button type="reset" class="btn-cancelar">Limpar</button>
-                <a href="index.html" class="btn-voltar">Voltar</a>
-            </div>
-        </form>
-    </section>
-</body>
-
-</html>
+            border-radius: 10px;
+            width: 400px;
+            padding: 25

@@ -1,23 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>enriquecimento de dados</title>
-<style>
-    background-color: blue;
-</style>
-
+    <title>Enriquecimento de Dados - SENAI</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>formulário de enriquecimento de dados</h1>
-    <form>
-<div class="card">
-            <h2>Dados Pessoais</h2>
-            <p> O senai agradece a sua inscrição</p>
-            <a href="index.html">Voltar para a inscrição</a>
-           
-</div>
-   </form>
+    <section class="container">
+        <h2>3. Enriquecimento de Dados</h2>
+        
+        <form action="#" method="POST">
+            <h3>Dados Pessoais</h3>
+            <label for="nome_completo">Nome completo:</label>
+            <input type="text" id="nome_completo" name="nome_completo">
+
+            <label for="data_nasc">Data de Nascimento:</label>
+            <input type="date" id="data_nasc" name="data_nasc">
+            
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00">
+
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero">
+                <option value="">Selecione</option>
+                <option value="fem">Feminino</option>
+                <option value="masc">Masculino</option>
+            </select>
+            
+            <label for="nacionalidade">Nacionalidade:</label>
+            <input type="text" id="nacionalidade" name="nacionalidade" value="Brasileira">
+
+            <h3>Endereço e Contato</h3>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade">
+
+            <label for="tel_celular">Telefone Celular:</label>
+            <input type="tel" id="tel_celular" name="tel_celular">
+
+            <label for="linkedin">LinkedIn (URL):</label>
+            <input type="url" id="linkedin" name="linkedin">
+
+            <h3>Outras Informações</h3>
+            <label>Possui CNH?</label>
+            <div class="radio-group">
+                <input type="radio" id="cnh_sim" name="cnh" value="sim"> <label for="cnh_sim">Sim</label>
+                <input type="radio" id="cnh_nao" name="cnh" value="nao"> <label for="cnh_nao">Não</label>
+            </div>
+            
+            <label for="observacao_extra">Observação:</label>
+            <textarea id="observacao_extra" name="observacao_extra"></textarea>
+
+            <div class="grupo-botoes">
+                <button type="submit" class="btn-gravar">Gravar</button>
+                <button type="reset" class="btn-cancelar">Limpar</button>
+                <a href="index.html" class="btn-voltar">Voltar</a> 
+            </div>
+        </form>
+    </section>
 </body>
 </html>
